@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1448FA6A1D4867CC00B08F69 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1448FA691D4867CC00B08F69 /* main.c */; };
+		1448FA721D49A2CA00B08F69 /* server.c in Sources */ = {isa = PBXBuildFile; fileRef = 1448FA701D49A2CA00B08F69 /* server.c */; };
+		1448FA751D49A5C700B08F69 /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = 1448FA731D49A5C700B08F69 /* client.c */; };
+		1448FA781D49AE0400B08F69 /* http_request.c in Sources */ = {isa = PBXBuildFile; fileRef = 1448FA761D49AE0400B08F69 /* http_request.c */; };
+		1448FA8E1D49D23800B08F69 /* http_response.c in Sources */ = {isa = PBXBuildFile; fileRef = 1448FA8C1D49D23800B08F69 /* http_response.c */; };
+		1448FA901D49DE7700B08F69 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1448FA8F1D49DE7700B08F69 /* CoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,15 @@
 /* Begin PBXFileReference section */
 		1448FA661D4867CC00B08F69 /* HTTPServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HTTPServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		1448FA691D4867CC00B08F69 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1448FA701D49A2CA00B08F69 /* server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = server.c; sourceTree = "<group>"; };
+		1448FA711D49A2CA00B08F69 /* server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = server.h; sourceTree = "<group>"; };
+		1448FA731D49A5C700B08F69 /* client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = client.c; sourceTree = "<group>"; };
+		1448FA741D49A5C700B08F69 /* client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = client.h; sourceTree = "<group>"; };
+		1448FA761D49AE0400B08F69 /* http_request.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = http_request.c; sourceTree = "<group>"; };
+		1448FA771D49AE0400B08F69 /* http_request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http_request.h; sourceTree = "<group>"; };
+		1448FA8C1D49D23800B08F69 /* http_response.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = http_response.c; sourceTree = "<group>"; };
+		1448FA8D1D49D23800B08F69 /* http_response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http_response.h; sourceTree = "<group>"; };
+		1448FA8F1D49DE7700B08F69 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1448FA901D49DE7700B08F69 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +56,7 @@
 		1448FA5D1D4867CC00B08F69 = {
 			isa = PBXGroup;
 			children = (
+				1448FA8F1D49DE7700B08F69 /* CoreServices.framework */,
 				1448FA681D4867CC00B08F69 /* HTTPServer */,
 				1448FA671D4867CC00B08F69 /* Products */,
 			);
@@ -58,6 +74,14 @@
 			isa = PBXGroup;
 			children = (
 				1448FA691D4867CC00B08F69 /* main.c */,
+				1448FA731D49A5C700B08F69 /* client.c */,
+				1448FA741D49A5C700B08F69 /* client.h */,
+				1448FA701D49A2CA00B08F69 /* server.c */,
+				1448FA711D49A2CA00B08F69 /* server.h */,
+				1448FA761D49AE0400B08F69 /* http_request.c */,
+				1448FA771D49AE0400B08F69 /* http_request.h */,
+				1448FA8C1D49D23800B08F69 /* http_response.c */,
+				1448FA8D1D49D23800B08F69 /* http_response.h */,
 			);
 			path = HTTPServer;
 			sourceTree = "<group>";
@@ -118,7 +142,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1448FA8E1D49D23800B08F69 /* http_response.c in Sources */,
+				1448FA721D49A2CA00B08F69 /* server.c in Sources */,
 				1448FA6A1D4867CC00B08F69 /* main.c in Sources */,
+				1448FA751D49A5C700B08F69 /* client.c in Sources */,
+				1448FA781D49AE0400B08F69 /* http_request.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
